@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import sys
 sys.path.append("../pyparsing-2.1.10")
-sys.path.append("../lxml")
 import os
 import xml.etree.ElementTree as ET
 import operator
@@ -32,9 +31,9 @@ class chromatin:
 		f = open(self.txtFile)
 		self.txtContent = f.read().lower()
 		self.sectionPos = self.sectionList()
-		self.histone = self.buildDict(self.xMap, self.xHat)
-		self.position = self.buildDict(self.yMap, self.yHat)
-		self.modif = self.buildDict(self.zMap, self.zHat)
+		self.histone = self.buildDict(self.xHat, self.xMap)
+		self.position = self.buildDict(self.yHat, self.yMap)
+		self.modif = self.buildDict(self.zHat, self.zMap)
 		
 	def sectionList(self):
 		sectionDict = {'ABSTRACT':['abstract', 'summary'],
@@ -88,6 +87,7 @@ class chromatin:
 		f1 = open(hatFile, 'r')
 		for line in f1:
 			line = line.replace("\r\n","")
+			line = line.replace("\n", "")
 			if line == "":
 				continue
 			dictionary.append((line.lower(), line))
@@ -107,7 +107,7 @@ class chromatin:
 		return grammar
 
 	
-	def sentenceParser(self):
+	def sentenceParser(self, mode):
 		tree = ET.parse(self.xml)
 		root = tree.getroot()
 		for sentence in root[0][0]:
@@ -127,16 +127,36 @@ class chromatin:
 				toParse.append(lemma)
 				toShow.append(word)
 			toParse = " ".join(toParse).encode("utf-8", "ignore")
-			entities = self.chromatinGrammar(toParse)
-			if len(entities)>0:
-				section = ""
-				for item in self.sectionPos:
-					if int(position) >= item[1]:
-						section = item[0]
-					else:
-						break
-				self.save(section, entities, toShow, sentenceID)
+			if mode == 0:
+                            entities = self.chromatinGrammar(toParse)
+                        else:
+                            entities = self.singleDictParser(mode, toParse)
+                        if len(entities)>0:
+                                section = ""
+                                for item in self.sectionPos:
+                                        if int(position) >= item[1]:
+                                                section = item[0]
+                                        else:
+                                                break
+                                self.save(section, entities, toShow, sentenceID)
 
+                            
+        
+        
+        def singleDictParser(self, mode, toParse):
+            myMap = os.path.join(self.mapPath, mode)
+            myDict = self.buildDict(myMap)
+            myGrammar = (WordStart() + myDict + WordEnd())
+            ParserElement.enablePackrat()
+            results = myGrammar.searchString(toParse)
+            entityList = []
+            if len(results) > 0:
+                for item in results:
+                    entityList.append(item[0])
+            return entityList
+        
+        
+        
 	def save(self, section, entityList, sentence, sentenceID):
 		strSentence = " ".join(sentence).encode("utf-8", "ignore")
 		strSentence = strSentence.replace(" .", ".")
@@ -145,7 +165,7 @@ class chromatin:
 			for entity in entityList:
 				resultWriter.writerow([self.pmid,section, sentenceID,entity, strSentence])
 	
-	def chromatinGrammar(self):
+	def chromatinGrammar(self, toParse):
 		chromatin_x = (WordStart() + self.histone + WordEnd())
 		chromatin_y = (WordStart() + self.position + WordEnd()).setResultsName('y')
 		chromatin_z = (WordStart() + self.modif + WordEnd()).setResultsName('z')
@@ -225,7 +245,7 @@ class chromatin:
 			if len(newTmpLen1) == 0:
 				entityList += tmpLen2
 			else:
-				entityList += newTmpL1
+				entityList += newTmpLen1
 				entityList += tmpLen2
 			
 		return entityList

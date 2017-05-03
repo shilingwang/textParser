@@ -1,0 +1,1111 @@
+1Biotech Research and Innovation Centre, University of Copenhagen, Ole Maaløes Vej 5, 2200 Copenhagen, Denmark. 2Centre for Epigenetics, University of Copenhagen, Ole Maaløes Vej 5, 2200 
+Copenhagen, Denmark. 3The Danish Stem Cell Center, University of Copenhagen, Blegdamsvej 3, 2200 Copenhagen, Denmark. 4Janssen Research & Development, 1400 McKean Road, PO Box 776, 
+Spring House, Pennsylvania 19477, USA.
+Epigenetics is defined as heritable traits that are not linked to changes in the DNA sequence; however, in broader terms, epige-netics is used to describe the mechanisms by which chromatinassociated proteins and post-translational modifications (PTMs) of 
+histones regulate transcription. Although all cells within an organism 
+contain the same DNA, epigenetic regulators and transcription factors 
+organize the genome into accessible and closed regions, which ensure 
+the correct transcriptional program in a given cell type. Thus, epigenetic 
+regulation is important for maintaining cell identity and is implicated in 
+fundamental processes such as proliferation, development, differentiation and genome integrity. Epigenetic gene regulation can be mediated 
+through DNA methylation, nucleosome remodelling, exchange of histone variants and PTMs of the histones (Box 1). Histones can be modified at specific amino acids with a diverse set of chemical modifications, 
+such as phosphorylation, acetylation, methylation, ubiquitination or 
+SUMOylation1,2. Research in the past decade has led to a better understanding of the significance of these PTMs. In particular, this progress 
+has been achieved through the identification of chromatin-associated 
+proteins that catalyse, recognize and remove the specific modification 
+(Box 1), the generation of high affinity antibodies specific for the PTM, 
+genome-wide location analysis and genetic studies. 
+Deregulation of epigenetic control is a common feature of a number 
+of diseases, including brain disorders and cancer3. The involvement 
+of DNA methylation in cancer has been appreciated for a number of 
+years, and the approval of the first drugs targeting DNA methylation 
+is a hallmark for epigenetic-based therapies. The two approved drugs, 
+azacitidine (5-azacytidine) and decitabine (5-aza-2ʹ-deoxycytidine), are 
+nucleoside analogues and irreversible inhibitors of the DNA methyltransferase enzymes DNMT1 and DNMT3. They are currently used 
+as first-line treatments for patients with myelodysplastic syndrome4,5. 
+Shortly after the approval of the two DNA methylation inhibitors, the 
+two histone deacetylase (HDAC) inhibitors suberoylanilide hydroxamic 
+acid (SAHA) and romidepsin (depsipeptide or FK228) were approved 
+for the treatment of refractory cutaneous T-cell lymphoma6,7. Although 
+the introduction of these drugs in the clinic has been a tremendous success for the field, a number of scientific challenges remain. Despite many 
+years of research, we do not understand exactly how and why these 
+drugs work. For HDAC inhibitors, acetylation is in general increased 
+following drug treatment; however, data demonstrating a correlation 
+between HDAC activity and therapeutic index is still lacking. Similarly, 
+so far there is no established gene expression signature or profile that 
+can predict whether a patient will benefit from the use of HDAC inhibitors. The picture is very similar for DNMT inhibitors. Although these 
+molecularly targeted drugs have the potential to revert the epigenetic 
+modification and have been shown to lead to global hypomethylation, 
+we do not know their precise mechanism of action. For both classes of 
+drug, the lack of reliable molecular biomarkers for predicting either 
+clinical activity or resistance is a serious drawback, limiting clinicians’ 
+ability to achieve the vision of ‘personalized medicine’. Despite a large 
+number of clinical trials, the use of the four drugs is so far limited to 
+specific haematological cancers.
+Recently, the use of next-generation sequencing technologies on DNA 
+isolated from primary tumours has revealed a high frequency of somatic 
+mutations in genes coding for chromatin-associated proteins that are 
+known to regulate DNA methylation patterns, histone PTMs and chromatin remodelling (see ref. 8 for a review). Strikingly, the discovery that 
+patients with leukaemia often have mutations in genes such as TET2, 
+IDH1, IDH2 and DNMT3A, which are all involved in regulating DNA 
+methylation patterns, might provide insight into why patients with leukaemia show a significant response to DNA methylation inhibitors, 
+and could hold promise for future patient stratification strategies. In 
+fact, the lack of genetic data to support the role of chromatin-associated 
+proteins in cancer has been a major obstacle for the development of 
+patient-specific targeted therapies. This has drastically changed with the 
+recent findings that chromatin-associated proteins often show aberrant 
+expression in cancer as a result of translocations or genetic amplifications, and by the discovery that they carry specific somatic mutations. 
+In this Review, we will focus on the recent advances made by the 
+scientific and pharmaceutical communities to develop highly potent 
+and specific inhibitors to chromatin-associated proteins (Table 1). 
+These represent several new classes of therapeutic targets and, as we 
+will exemplify, recent results have shown the feasibility of developing specific inhibitors to histone methyltransferases (HMTs), histone 
+demethylases and domains required for the binding of protein complexes to specific histone modifications. This is a very exciting time for 
+the field, in which the combination of knowledge regarding the role 
+of chromatin-associated proteins in disease and the development of 
+potential new classes of epigenetic drugs will hopefully lead to molecularly targeted and lower toxicity therapies with a clear genetic marker 
+or markers for patient stratification. 
+A plethora of groundbreaking studies have demonstrated the importance of chromatin-associated proteins and posttranslational modifications of histones, proteins and DNA (so-called epigenetic modifications) for transcriptional control 
+and normal development. Disruption of epigenetic control is a frequent event in disease, and the first epigenetic-based 
+therapies for cancer treatment have been approved. A generation of new classes of potent and specific inhibitors for several 
+chromatin-associated proteins have shown promise in preclinical trials. Although the biology of epigenetic regulation is 
+complex, new inhibitors such as these will hopefully be of clinical use in the coming years.
+Chromatin proteins and 
+modifications as drug targets
+Kristian Helin1,2.3 & Dashyant Dhanak4
+4 8 0  |  N A T U R E  |  V O L  5 0 2  |  2 4  O C T O B E R  2 0 1 3
+REVIEW
+doi:10.1038/nature12751
+© 2013 Macmillan Publishers Limited. All rights reserved
+Targeting histone methyltransferases
+An association between histone hypermethylation, transcriptional regulation and the cancer phenotype has spurred efforts to develop specific, 
+small molecule inhibitors of the methyltransferase enzymes involved in 
+histone lysine and arginine methylation. The family of HMTs (or more 
+accurately, protein methyltransferases; that is, protein arginine methyltransferases (PRMT) and protein lysine methyltransferases (KMTs)) 
+encompasses over 60 different proteins that sequentially transfer a methyl 
+group from the cofactor S-adenosylmethionine (SAM) to the terminal 
+amine of specific substrate lysine and/or arginine residues. With the notable exception of the HMT DOT1L (see later), the catalytic transfer of a 
+methyl group from SAM occurs within a conserved SET domain, which 
+accommodates the cofactor and peptide substrates in a conformation conducive for an SN2 transfer reaction generating S-adenosylhomocysteine 
+(SAH) and the methylated histone side chain as products (Fig. 1). Detailed 
+structural determinations of multiple SET-domain-containing HMTs 
+have been carried out to support this mechanistic rationale for the methyl 
+transfer event with a detailed analysis of binding modes of cofactor and/or 
+peptide substrates to allow the rational design of selective inhibitors. An 
+understanding of exactly how the degree of histone lysine methylation 
+modulates transcription remains to be attained, but the need for the coordinated recruitment of methylation-sensitive proteins to transcriptional 
+complexes offers one plausible hypothesis. Interestingly, the HMTs have 
+also been reported9–11 to act on various non-histone protein substrates to 
+regulate their functions. However, the relative contributions of the histone 
+compared with non-histone action of HMTs are not well understood and 
+continue to be an area of active investigation. 
+In the context of cancer, the discovery of genetic alterations in HMTs in 
+several different tumour types12–14 has undoubtedly attracted much attention and provided additional support for the importance of epigenetic 
+deregulation in a disease that is widely considered to be genetically driven. 
+In some cases (such as the methyltransferase EZH2, discussed later), heterozygous point mutations in the catalytic SET domain lead to a gain 
+of function of the wild-type enzyme15,16, favouring trimethylation and 
+the silencing of tumour suppressor genes and/or differentiation-specific 
+genes. Similarly, in other cancers (such as, increased expression of NSD2 
+in multiple myeloma) chromosomal translocations result in increased 
+expression of the methyltransferases, again leading to aberrant transcription and proliferation17. Conversely, lysine methylation induced by the 
+HMT DOT1L results in sustained expression of several genes required 
+for leukaemogenesis. Therefore, small molecule inhibitors, of for instance 
+EZH2 or DOT1L, should be able to reduce or eliminate the site-specific 
+lysine methylation introduced by the HMTs and reverse the oncogenic 
+state (see later). 
+DOT1L
+Chromosomal translocations are relatively common in various haematopoietic malignancies and can be associated with aggressive or poorly 
+responsive disease. In leukaemia that involves rearrangement of the MLL 
+(also known as KMT2A) gene, translocation leads to fusions with more 
+than 50 different protein partners including ENL, ELL, AF4 and AF9 
+(ref. 18) (Fig. 2a). The resulting fusion complexes recruit DOT1L, which 
+specifically methylates the core histone H3 residue lysine 79 (H3K79) 
+and contributes to transcriptional activation of HOXA10, MEIS1 and 
+other genes required for leukaemia initiation19. DOT1L lacks the SET 
+domain that is commonly present in other lysine methyltransferases but 
+nonetheless can readily catalyse the transfer of one, two or three methyl 
+groups to the ε-NH2 group of H3K79. In a crucial paper from the Armstrong laboratory20, deletion of DOT1L in MLL-rearranged cell lines and 
+subsequently in in vivo mouse studies directly demonstrated the role of 
+the enzyme not only in introducing the H3K79 methyl mark, leading to 
+a concomitant increase in gene expression, but also in the development 
+of the leukaemia.
+Given the significant role of DOT1L in MLL-rearranged leukaemia, 
+inhibitors of its H3K79 methyltransferase activity have been aggressively 
+pursued as potential therapeutics. EPZ004777, a SAM-competitive pyrrolopyrimidine derivative (Fig. 2b) was designed21 to mimic both SAM 
+and the reaction product SAH while also taking advantage of potential 
+hydrophobic interactions available in the binding vicinity. The compound is an extremely potent and remarkably selective SAM-competitive inhibitor of the enzyme. In MLL-rearranged cell lines, EPZ004777 
+reduces global H3K79me2 levels, blocks the expression of MLL-fusion 
+target genes and has antiproliferative activity21. Consistent with a targeted mechanism of action, only cell lines with an MLL gene fusion were 
+DNA is wrapped around histones (H2A, H2B, H3 and H4) 
+to form nucleosomes. Nucleosomes are further compacted 
+to form condensed chromatin. The compaction of DNA is 
+in part regulated through post-translational modifications 
+(PTMs) of the histone tails, which protrude from nucleosomes. 
+Epigenetic regulators can in popular terms be divided into 
+erasers, writers or readers of PTMs. The erasers, such as 
+histone deacetylases and histone demethylases, remove 
+the PTMs and prepare the histones for other modifications. 
+The writers comprise enzymes such as histone acetylases, 
+kinases, DNA and histone methyltransferases and ubiquitin 
+ligases. The writers catalyse the PTMs on the DNA or the 
+proteins, and may impose epigenetic heritability such as 
+DNA methylation through copying and maintaining the 
+modification. Other modifications, such as histone acetylation, 
+respond rapidly to environmental stimuli and are therefore 
+more dynamic. Readers of the post-translational modification 
+include proteins with specific domains, such as bromo-, 
+chromo-, tudor-, MBT-, PWWP-, WD40- and PHD-domains, 
+which bind to the specific modification. The readers, which 
+are often found in large protein complexes, interpret the 
+modification and impose changes in chromatin structure. 
+BOX 1
+The role of DNA and histone PTMs 
+Histones
+Demethylases,
+deacetylases and
+phosphatases
+Methyltransferases,
+acetyltransferases, kinases 
+and ubiquitin ligases
+Proteins with domains
+ such as bromo, chromo 
+and tudor
+Erasing Writing Reading
+Phosphoryl
+N-terminus
+DNA
+Methyl
+Acetyl
+H2A H2B
+N
+N
+N
+N
+H4H3
+2 4  O C T O B E R  2 0 1 3  |  V O L  5 0 2  |  N A T U R E  |  4 8 1
+REVIEW INSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+sensitive to the DOT1L inhibitor whereas non-rearranged lines remained 
+unaffected. Regardless of the measured parameter, the kinetics of cellular 
+response to DOT1L inhibition (and other epigenetic drugs reported so 
+far) is strikingly distinct to the more rapid response usually seen within a 
+few hours with signal transduction modulators (kinase inhibitors) or nonspecific chemotherapeutic drugs. Thus, the maximal effect on depletion 
+of the methyl mark is typically seen only after 4–5 days of exposure to the 
+drug. Similarly, significant transcriptional changes occur after 6–8 days 
+and more than 10 days are required to observe an antiproliferative phenotype. Defining and understanding these distinctive characteristics 
+have important implications for the development of these agents because 
+established measures of biomarker-based pharmacodynamic and/or early 
+clinical response may be inappropriate. In addition, prolonged exposure 
+to the drug may be required for efficacy, further highlighting the need for 
+a selective compound with presumably lower propensity for undesirable 
+off-target effects. Encouragingly, in preclinical experiments, EPZ004777 
+seemed to be well tolerated when given to mice at efficacious doses21.
+Unfortunately, notwithstanding these attractive attributes, poor pharmacokinetics — including a short plasma half-life — requires EPZ004777 
+to be administered as a 7 day continuous infusion using surgically 
+implanted mini-osmotic pumps. In a preclinical setting, such studies are 
+readily conducted but can pose significant challenges in clinical studies 
+involving patients with cancer. In an attempt to address these shortcomings, further modifications of the pyrrolopyrimidine core of EPZ004777 
+have been investigated22 as an approach to designing second-generation 
+DOT1L-targeting drugs. For example, the Structural Genomics Consortium (SGC) has described bromo-deaza-SAH (Fig. 2b) as a convenient 
+DOT1L inhibitor, allowing for the generation of X-ray co-crystal structures and hence the rational design of new analogues with improved 
+properties23. The recent initiation, by the biotech company Epizyme, of 
+clinical trials to determine the safety and efficacy of the DOT1L inhibitor 
+EPZ-5676 (ref. 24) in patients with MLL leukaemia is highly significant 
+and represents the first human study of a ‘targeted’ HMT inhibitor.
+EZH2
+The enzyme EZH2 is the catalytic component of the Polycomb protein 
+complex PRC2 and acts as an HMT at H3K27. Importantly, in cell-free 
+systems the EZH2 subunit is only catalytically competent when in a 
+complex with at least two non-enzymatic partners (EED and SUZ12) 
+and moreover in a physiologically relevant, intracellular context, the 
+complex is known to contain two additional proteins (AEBP2 in complex with either RBBP4 or RBBP7)25 (Fig. 2c). 
+PRC2 maintains the transcriptional repression of a large number 
+of genes with key regulatory roles in development and differentiation, 
+and PRC2 proteins are required for normal embryonic development25. 
+Pioneering studies from the Chinnaiyan lab have shown an association 
+between increased levels of both EZH2 and H3K27me3 and poor outcomes in metastatic prostate cancer26. In addition, inactivating mutations 
+in UTX, an H3K27 demethylase27,28, are also similarly correlated, suggesting a key role for H3K27 hypermethylation in prostate cancer. Other studies have revealed a similar relationship between elevated levels of EZH2 
+with silencing of EZH2 target genes and poor prognosis in solid tumours, 
+including breast, kidney and lung29–32. More recently, somatic activating 
+mutations in the SET domain of EZH2 have been identified in follicular lymphoma, and diffuse large B-cell lymphoma (DLBCL), leading to 
+increased H3K27me3 (refs 33–35). Taken together, these findings suggest 
+that misregulation of H3K27me3 levels, through EZH2 overexpression 
+or point mutations, silences target genes that are important to tumour 
+growth and survival and make a compelling case for targeting the enzyme 
+therapeutically. Paradoxically, however, inactivating mutations in EZH2 
+have also been reported in myelodysplastic syndrome36, raising the 
+potential of a tumour suppressor function for the protein. The role of 
+EZH2 and H3K27 methylation in promoting or inhibiting tumorigenesis 
+and/or maintenance seems therefore to be context dependent and, based 
+on the potential for deleterious effects, suggests caution should be taken 
+in developing chronically administered therapeutic inhibitors. Despite 
+these potential drawbacks, multiple pharmaceutical and biotech company 
+research groups have developed highly potent, selective, small molecule 
+inhibitors of EZH2 (refs 37–39), and other investigators have pursued 
+equally interesting natural-product-based inhibitors40.
+The medicinal chemistry design of HMT inhibitors has sought to take 
+advantage of the intrinsic affinity of EZH2 for both SAH (Ki = 7.5 uM) 
+and lysine-containing substrate mimetics. Hybrid molecules (such as 
+that shown in Fig. 2d) that contain discrete elements of both recognition motifs are modest inhibitors and presumably act as classical bisubstrate inhibitors41. However, the relatively low permeability of these 
+highly charged compounds might limit their use in cell-based assays 
+and in vivo. By contrast, despite being devoid of direct EZH2 inhibitory activity, the structurally related and widely used 3-deazaneplanocin 
+(DZNep; Fig. 2d) has been shown to reactivate indirectly PRC2-silenced 
+genes in cancer cell lines by depleting PRC2 subunits42. Unfortunately, 
+this activity does not allow for differentiation of selective catalytic inhibition of EZH2 from more global effects of depleting PRC2, including 
+loss of scaffolding functions, microRNA binding sites and so on, and 
+complicates the interpretation of cellular phenotypes resulting from 
+true inhibition of H3K27 methylation43. Ultimately, the use of DZNep 
+in studies related to investigating the role of EZH2 inhibition in bioassays should be avoided.
+High throughput screening of distinct compound libraries by 
+various groups led to the discovery of non-SAM-derived catalytic 
+inhibitors of EZH2. Remarkably, all the screens identified compounds with a pyridone amide motif, indicating a crucial molecular recognition role for functionality. Although these molecules do 
+not resemble SAM, biochemically they are competitive inhibitors of 
+cofactor binding and various three dimensional homology models 
+have been proposed to rationalize how they may mimic the interactions of the natural substrate. Ultimately, detailed structural studies 
+will be needed to determine unequivocally if both occupy the same 
+binding site in EZH2. Despite these uncertainties, extensive chemical 
+modification of the hits identified in high throughput screening to 
+improve affinity and pharmaceutical properties led to the discovery of analogues37–39 (such as those shown in Fig. 2d), all of which 
+were highly potent, selective and bioavailable inhibitors of EZH2 
+in biochemical and cellular assays with in vivo antitumour activity 
+in germinal-cell DLBCL with activating EZH2 mutations. Remarkably, these compounds show exquisite selectivity for EZH2 inhibition 
+Table 1 | Small molecule inhibitors to chromatin-associated proteins
+Chromatin-binding protein Compound
+Histone methyltransferases
+DOT1L EPZ004777 (ref. 21), EPZ-5676 (ref. 24), 
+SGC0946 (ref. 86)
+EZH2 GSK126 (ref. 37), GSK343 (refs 87, 88), 
+EPZ005687 (ref. 38), EPZ-6438 (ref. 44), EI1 (ref. 
+39), UNC1999 (ref. 89)
+G9A BIX01294 (ref. 90), UNC0321 (ref. 91), UNC0638 
+(ref. 92), NC0642 (ref. 88), BRD4770 (ref. 93)
+PRMT3 14u (ref. 94)
+PRMT4 (CARM1) 17b (Bristol-Myers Squibb) (refs 95, 96), 
+MethylGene (ref. 97)
+Histone demethylases 
+LSD1 Tranylcypromine (ref. 62), ORY-1001 (ref. 63)
+Bromodomains
+BET JQ1 (ref. 73), IBET762 (ref. 72), IBET151 (refs 76, 
+98), PFI-1 (ref. 99)
+BAZ2B GSK2801 (ref. 88)
+Chromodomains
+L3MBTL1 UNC669 (ref. 100)
+L3MBTL3 UNC1215 (ref. 101)
+4 8 2  |  N A T U R E  |  V O L  5 0 2  |  2 4  O C T O B E R  2 0 1 3
+REVIEWINSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+(more than 10,000-fold) over most other methyltransferases and can 
+distinguish from EZH1 inhibition (around 100-fold). One of these 
+compounds (EPZ-6438, also known as E7438) has entered human 
+clinical trials and several others are likely to follow shortly, allowing 
+for an assessment of the therapeutic potential of targeting EZH2 in 
+not only lymphoma but also solid tumours with increased levels of 
+H3K27me3. In this context, the recent report of the activity of an 
+EZH2 inhibitor in a preclinical model of paediatric malignant rhabdoid cancer is notable. A subset of these tumours with inactivated 
+SMARCB1 are thought to be dependent on the catalytic activity of 
+EZH2, and in xenograft models were shown to be sensitive to treatment with the EZH2 inhibitor, EPZ-6438 (ref. 44). Interestingly, and 
+as mentioned above, other solid tumours (for example, prostate and 
+breast) have also been associated with drastic upregulation of EZH2 
+expression but surprisingly, no convincing data has emerged showing 
+activity of catalytic EZH2 inhibitors in these cancers. As with many 
+other new potential therapeutics, the safety profile of EZH2 inhibitors 
+remains to be fully defined but initial observations in prolonged animal studies suggest that they are well tolerated with little or no overt 
+toxicity and EPZ-6438 has been advanced to a phase 1/2 clinical trial 
+in patients with advanced solid tumours or with B-cell lymphomas.
+Targeting histone demethylases
+Previously, methylation was considered to constitute a permanent and 
+irreversible histone modification that defined epigenetic programs in 
+concert with DNA methylation. However, the discovery of lysine-specific demethylase 1 (LSD1, also known as KDM1A, AOF2, BHC110 and 
+KIAA0601) and later the JmjC-domain-containing lysine demethylase 
+family has completely changed this view (for reviews, see refs 45, 46). 
+LSD1 and its close relative LSD2 (also known as KDM1B and AOF1) 
+belong to the superfamily of flavin adenine dinucleotide (FAD)-dependent monooxidases (Fig. 3a). The two proteins can catalyse the demethylation of H3K4me2 and H3K4me1, and LSD1 has in addition been 
+shown to catalyse the demethylation of H3K9me2 and H3K9me1 as well 
+as a number of non-histone proteins such as p53, DNMT1 and E2F1. 
+The JmjC-domain family
+In contrast to the LSD demethylases, the JmjC-domain-containing 
+demethylases can also demethylate trimethylated lysines. This catalysis involves an oxidative mechanism requiring iron and 2-oxoglutarate as co-factors and probably occurs through direct hydroxylation of 
+the affected methyl group (Fig. 3b)45,46. There are 30 of these JmjCdomain-containing proteins in humans, of which 17 have been shown 
+to be active histone lysine demethylases. Several results have associated the histone lysine demethylases with disease, in particular cancer 
+and brain disorders. For instance, members of the JMJD2 (also known 
+as KDM4) family, which can demethylate H3K9me3 and H3K9me2, 
+and H3K36me3 and H3K36me2 have been found to be overexpressed 
+in squamous cell carcinoma, breast cancer and medulloblastoma47–49. 
+Moreover members of the JARID1 (also known as KDM5) family that 
+demethylate H3K4me3 and me2 are overexpressed in breast and bladder cancers50,51, and FBXL10 (also known as KDM2B), specific for 
+H3K36me3 and me2, is overexpressed in leukaemia52. Somatic mutations and deletions have also been identified in the JmjC-domain-containing demethylases, including the H3K27me3 and me2 demethylase 
+UTX (also known as KDM6A) that is found mutated in, for instance, 
+multiple myeloma and renal cell carcinoma27,28, and in JARID1C (also 
+known as KDM5C) and PHF8 in patients with X-linked mental retardation53,54. These mutations often lead to loss of a functional demethylase, 
+and because they may be responsible for the disease phenotype, these 
+observations could suggest that the corresponding HMT is a good target 
+for drug development. 
+Although our understanding of the biological role of the histone 
+demethylases in normal development and disease is still relatively 
+poor, they are considered to be attractive targets for drug development 
+due to their association with disease and their well-defined catalytic 
+mechanism. The use of structure-guided design has recently led to the 
+first highly potent and selective inhibitors to JmjC-domain containing 
+enzymes55. These inhibitors, which are competitive with 2-oxoglutarate and non-competitive with a peptide substrate, are potent inhibitors 
+with an half-maximal inhibitory concentration (IC50) in the nanomolar 
+range, and were shown to be specific for the JMJD3 (also known as 
+KDM6B) and UTX H3K27 demethylases. JMJD3 has previously been 
+associated with inflammatory responses, and in agreement with this 
+a JMJD3 and UTX inhibitor reduced proinflammatory cytokine production by human primary macrophages55. In addition to showing the 
+relevance of the catalytic activity of JMJD3 in this process, this study 
+provided proof of concept for generating specific JmjC-domain inhibitors. Further proof of concept has been provided by the biotech company EpiTherapeutics, which has developed highly potent inhibitors 
+to the JARID1 family (L.-O. Gerlach, personal communication). These 
+compounds show specific in vivo target engagement of JARID1B, an 
+increase in H3K4me3 levels in treated cells and reduced proliferation of 
+cancer cells in a xenograft mouse model (L.-O. Gerlach, personal communication). These proof-of-concept studies provide support for the 
+idea that JmjC-domain-containing proteins can be targeted by specific 
+compounds, which may have therapeutic applications. 
+LSD1
+It is likely that the first small molecule inhibitors of histone demethylases 
+that enter clinical trials will target LSD1 (ref. 56) (Fig. 3c). Several data 
+have suggested that LSD1 could be an interesting therapeutic target in 
+cancer because of its high-level expression in prostate cancer, undifferentiated neuroblastoma, oestrogen-negative breast cancer, bladder cancer 
+and colorectal cancer57–60. Nevertheless, the recent demonstration that 
+LSD1 is required for the development and maintenance of acute myeloid 
+leukaemia (AML) has gained the most attention61,62. Specifically, both 
+genetic and pharmacological data have been provided in vitro and in 
+animal models showing that LSD1 is required to sustain the expression 
+of genes induced by the MLL–AF9 oncoprotein and therefore the maintenance of leukaemia stem cells61. The pharmacological results included 
+the use of the general monooxidase inhibitor tranylcypromine (TCP)62 
+and the TCP-derivative trans-N-((2-methoxypyridin-3-yl)methyl)2-phenylcyclopropan-1-amine) — developed by the biotech company 
+Lysine peptide 
+substrate
+Methyl lysine peptide 
+product
+S-adenosylmethionine S-adenosylhomocysteine
+HMTs
+CO2H
+NH2
+CH3
+H3C
+NH2
+NH
+N
+H
+RHNOC N
+NO
+O
+R′NH
+RHNOC
+O
+R′
+S
+CO2H
+NH2
+S
+N
+N
+OHHO
+NH2
+NH2 N
+NO
+N
+N
+OHHO
+Figure 1 | Mechanism of lysine methylation catalysed by histone lysine methyltransferases. The lysine amino group of the substrate histone polypeptide 
+engages in an SN2 reaction with the activated co-factor S-adenosylmethionine (SAM), resulting in the formation of an N-methylated lysine and 
+S-adenosylhomocysteine (SAH).
+2 4  O C T O B E R  2 0 1 3  |  V O L  5 0 2  |  N A T U R E  |  4 8 3
+REVIEW INSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+Oryzon Genomics63 (Fig. 3c) — that is more specific and 100-fold more 
+potent than TCP61. The inhibition of LSD1 in AML led to increased differentiation followed by apoptosis, and consistent with this an increase 
+in expression of differentiation markers (for example, CD11b). The 
+inhibition of LSD1 activity was not associated with a global increase 
+in H3K4me2; however, some increase in H3K4me2 was observed on 
+MLL–AF9 bound genes and genes involved in differentiation61,62. Taken 
+together these studies provide proof of concept for LSD1 as a therapeutic 
+target in leukaemia; however, the mechanism by which LSD1 contributes to leukaemia is not clear for several reasons. First, LSD1 has been 
+found to be part of several chromatin complexes, including the neuronal 
+silencer co-repressor of RE1-silencing transcription factor (CoREST; 
+also known as RCOR1) and the nucleosome remodelling and histone 
+deacetylase NuRD45 (Fig. 3d). These complexes are found throughout 
+the genome and have a pleotropic role in transcriptional regulation. 
+Second, LSD1 also binds throughout the genome, especially at active 
+promoters and enhancers64,65. Third, as mentioned above, LSD1 can 
+demethylate H3K9me2 and me1, and H3K4me2 and me1 (Fig. 3d). 
+H3K9me2 is normally found associated with repressed chromatin and 
+transcriptional silencing, whereas H3K4me2 and me1 are associated with 
+active promoters and enhancers. Inhibition of LSD1 activity in AML did 
+not lead to any change in H3K9me2, whereas an increase of H3K4me2 
+was observed on MLL–AF9 target genes61 and CD11b62. These observations raise several questions. First, if LSD1 is bound throughout the 
+genome, why does the inhibition of LSD1 lead to the selective increase 
+of H3K4me2 on specific promoters? Second, the expression of MLL–
+AF9 target genes is decreased in response to LSD1 inhibition, whereas 
+H3K4me2 is increased. This is counterintuitive, because an increase in 
+H3K4me2 is normally associated with increased expression of a gene, as 
+is the case for CD11b. Therefore, what is the mechanism leading to the 
+decreased expression of MLL–AF9 target genes, and how does inhibition 
+of LSD1 lead to differentiation and apoptosis? 
+Despite the lack of precise mechanistic insight into how LSD1 inhibition can lead to inhibition of leukaemia and prolonged survival of mice, 
+the LSD1 inhibitors seem very promising. Oryzon Genomics has reported 
+on the further development of a clinical compound, ORY-1001, which is 
+more than 1,000 times more potent than TCP and highly selective over 
+related enzymes, including LSD2 (ref. 66). The structure of ORY-1001 has 
+not been revealed; however, it has been shown to reduce leukaemic stemcell potential, colony formation and to induce differentiation of AML 
+cell lines at subnanomolar concentrations63. Moreover, ORY-1001 leads 
+to the time/dose-dependent increase of H3K4me2 at LSD1 target genes 
+(for example, those that encode CD11b) and induction of differentiation 
+markers (T. Maes, personal communication). Oryzon Genomics expects 
+to take ORY-1001 into phase I clinical trials later this year. 
+Interestingly, the potential use of LSD1 inhibitors is not limited to oncological disease. In fact, the weak LSD1 inhibitor TCP has been used as a 
+non-selective monoamine oxidase inhibitor for the treatment of depression67, and because aberrant activity of the REST–CoREST–LSD complex 
+has been implicated in Huntington’s disease68 and LSD1 in herpes infection69 the LSD1 inhibitors may also be useful for these indications.
+Targeting bromodomains
+Bromodomains comprise a small family of proteins that recognize and 
+bind to acetylated lysine residues on histone tails (Fig. 4a). Acting as 
+a scaffold for both the assembly of larger, multi-component macromolecular complexes regulating chromatin accessibility and for the 
+recruitment of key transcriptional proteins such as RNA polymerase, 
+NH2
+N
+N
+NNN
+HH
+O
+O
+OHHO
+N
+NH2
+NH2
+NH
+O
+N
+N N
+N
+NC
+O
+O
+N
+HN
+O NH
+NH
+OO NH
+NH
+O
+N
+O NH
+N N
+N
+NN
+Cl
+H O
+OHHO
+N
+NH2
+NH2
+HO2C
+HO2C
+N
+Br
+N
+O
+S
+OHHO
+N
+NH2
+N N
+OHHO
+HO
+N
+b EPZ004777 Br-SAH
+dc
+DZNep
+GSK126 EPZ-6438 EI1
+K79
+K4
+MLL AF10
+DOT1L
+ON
+a
+K27
+K4
+EED
+SUZ12 AEBP2
+RBBP4EZH2
+OFF
+Hybrid
+Figure 2 | Histone methyltransferases and inhibitors to DOT1L and 
+EZH2. a, DOT1L catalyses H3K79 methylation of nucleosomes associated 
+with actively transcribed genes. It is recruited by MLL-fusion proteins 
+(here exemplified by MLL–AF10) to MLL-target genes, and is required 
+for leukaemia induced by MLL-fusion proteins. b, Specific inhibitors to 
+DOT1L are EPZ004777 (ref. 21) and bromo-deaza S-adenosylhomocysteine 
+(Br-SAH) (ref. 22). c, PRC2 catalyses dimethylation and trimethylation of 
+H3K27 to maintain transcription repression of target genes. These target 
+genes are often associated with H3K4me3 as well — a mark of CpG-islands 
+and transcription start sites. d, Reported EZH2 inhibitors are a hybrid 
+molecule (ref. 41), 3-deazaneplanocin (DZNep)42, GSK126 (ref. 37), EPZ6438 (ref. 44) and EI1 (ref. 39). 
+4 8 4  |  N A T U R E  |  V O L  5 0 2  |  2 4  O C T O B E R  2 0 1 3
+REVIEWINSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+bromodomain-containing proteins are considered ‘readers’ of the histone code. The human genome encodes more than 50 bromodomain 
+proteins, which can be phylogenetically segregated into eight subfamilies70. Embryonic lethality on knockdown of the genes encoding 
+bromodomain containing proteins71 underscores the primary importance of the proteins in basic cell function, but it has also limited our 
+better understanding of their role in normal and disease physiology. 
+Structurally, bromodomains are made up of a bundle of four alpha 
+helices joined by two closely interacting but sequence variable loops 
+that form an invaginated, largely hydrophobic pocket for binding to 
+the acetylated lysine ligand70.
+The current intense interest in therapeutically targeting various 
+bromodomains originated in the demonstration by GlaxoSmithKline 
+(GSK), the SGC and the Bradner lab that the bromodomain and extraterminal (BET) subfamily (Brd2, Brd3, Brd4 and BrdT) could be targeted by small molecule antagonists72,73. By directly binding to the BET 
+proteins, such compounds prevent the interaction of the reader module 
+to the acetylated histone thereby preventing assembly of an active gene 
+transcriptional complex (Fig. 4a). The ability to disrupt these protein–
+protein interactions with drug-like compounds is remarkable and has 
+been shown in multiple structural studies67 to be related to the presence 
+of well-defined, deep acetyl lysine binding pockets within the BET 
+proteins. By applying cell-based, high throughput screening of compound libraries combined with elegant chemoproteomics and a battery 
+of structural and biophysical assays, GSK developed compounds that 
+were able to inhibit all four BET proteins but with good selectivity over 
+other bromodomains. Similarly, the SGC working with the Bradner 
+lab developed the widely used JQ1 (Fig. 4b), originating from a patent 
+application by Mitsubishi–Tanabe74. Crucially, the free availability of 
+these compounds to the research community has drastically accelerated our understanding of the primary mechanism of transcriptional 
+regulation and wider chromatin biology. Indeed, the realization that the 
+pharmacological effects of BET inhibition could potentially be applied 
+to ameliorate diverse disease phenotypes has spurred further rounds 
+of compound discovery in pharmaceutical companies.
+Early evidence for the potential involvement of BET proteins in cancer was the observation that overexpression of Brd2 in lymphocytes 
+induced B-cell lymphomas. Subsequently, French et al. reported that 
+chromosomal translocation of the Brd4 gene with the NUT protein 
+was the driver for proliferation in the rare but lethal malignancy, NUTmidline carcinoma (NMC)75. Furthermore, reversal of the tumour 
+phenotype with BET inhibition not only provided support for the 
+underlying mechanism but also illustrated the therapeutic potential 
+of BET antagonism. Based on this data, a phase I clinical study of 
+the GSK BET inhibitor IBET762 (Fig. 4b) in NMC was initiated in 
+March 2012.
+Investigation of the anti-proliferative activity of BET inhibitors 
+in models of haematological cancer, including AML, Burkitt’s lymphoma, multiple myeloma and B-cell acute lymphoblastic leukaemia 
+has revealed perhaps the most exciting facet of bromodomain biology76,77. In these malignancies, BET inhibitors such as JQ1 and the 
+more highly bioavailable IBET151 (Fig. 4b) directly silenced MYC 
+expression through disruption of BET protein binding at the MYC 
+locus. Because the various MYC isoforms are known to be crucial 
+H2N
+N N
+OMe
+H
+K4
+HDAC2
+HDAC1 LSD1
+LSD1
+JMJD2
+AR
+OFF
+K9
+ON
+a c
+d
+b
+Tranylcypromine
+Oryzon LSD1 inhibitor
+NuRD
+Androgen receptor
+CoREST
+O
+CH3
+CH3
+N
+HN
++
+CH3
+O
+CH3
+H2C
+N
+HN
++
+CH3
+OH
+O
+CH3
+CH3
+NH
+HN
++
+CH2O
+O2
+Succinate + CO2
+Fe2+
+α-ketoglutarate
+O
+CH3
+CH2
+N
+HN
++
+O
+CH3
+CH3
+NH
+HN
++
+O
+CH3
+H
+NH
+HN
++
+H2O
+CH2O
+FADH2
+FAD H2O2
+O2
+MTA2
+HDAC2
+HDAC1
+LSD1
+CoREST
+AR
+Figure 3 | Histone demethylases and inhibitors to LSD1. a, Reaction 
+mechanism used by FAD-dependent LSD1 and LSD2 for demethylation 
+(modified from ref. 45). b, Reaction mechanism used by JmjC-domaincontaining histone demethylases (modified from ref. 45). c, Inhibitors to 
+LSD1. The general monooxidase inhibitor tranylcypromine, and the derivative 
+trans-N-((2-methoxypyridin-3-yl)methyl)-2-phenylcyclopropan-1-amine) 
+developed by the biotech company Oryzon Genomics63. d, LSD1 is part of 
+several chromatin complexes, including nucleosome remodelling and histone 
+deacetylase (NuRD) and the neuronal silencer CoREST, in which it catalyses 
+the demethylation of H3K4me2 and H3K4me1. As an associated protein with 
+the androgen receptor, together with JMJD2 histone demethylases, LSD1 is 
+responsible for the demethylation of H3K9me2 and H3K9me1 (refs 102,103).
+2 4  O C T O B E R  2 0 1 3  |  V O L  5 0 2  |  N A T U R E  |  4 8 5
+REVIEW INSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+regulators of cell proliferation and survival and MYC is a potent 
+oncogene overexpressed in many cancers, bromodomain antagonism offers, for the first time, an opportunity to target MYC-driven 
+oncogenicity. Intriguingly, however, recent reports have shown crucial 
+subtleties in the mechanism of BET inhibitor modulation of MYC78. 
+Whereas in haematological cancers, BET regulates c-MYC, in neuroblastoma, BET inhibitor effects seem to be manifested through 
+silencing of N-MYC, presumably by the same or at least a similar 
+mechanism. These results suggest there is potential for a broader spectrum of activity for BET inhibitors beyond NMC and haematological 
+malignancies, and ongoing clinical studies with IBET762 now include 
+other solid tumours such as N-MYC-amplified lung and colorectal 
+cancers. The question of a therapeutic window for BET inhibitors in 
+a clinical setting remains to be answered but presumably data from 
+animal toxicity studies did not preclude advancing these compounds 
+to human trials.
+Outside of cancer, BET inhibition has shown striking effects in a 
+range of inflammatory disease models, suggesting a central role in 
+lymphocyte lineage aetiology. Interestingly, BET inhibition with 
+IBET762 attenuated only secondary response genes in macrophages 
+with no effect on the primary response elements72. The ability to 
+modulate selectively the expression of gene subsets is of significance 
+and raises the possibility of further fine-tuning the level of transcriptional activity with selective inhibitors of other bromodomains, which 
+could translate to clinical benefits with fewer undesirable side effects. 
+In mouse models of sepsis, pretreatment with a BET inhibitor suppressed cytokine expression and protected the animals from lethal 
+lipopolysaccharide challenge. In a noteworthy demonstration of activity, administration of the inhibitor even after allergen challenge led to 
+survival69. Evidence of the function of other bromodomains (SP110, 
+SP140 and SMARCA4) in immune-mediated diseases driven by loss 
+of memory T cells and B cells is emerging and limited to tantalizing 
+association of bromodomain expression and disease phenotype. It is 
+too early to say whether small molecule inhibitors of other bromodomains or methyl-lysine readers can be successfully identified, but 
+some promising advances have recently been made with BAZ2B and 
+chromodomain proteins associated with brain tumours (Table 1). The 
+development and availability of additional specific small molecule 
+probes will be needed to help delineate the biology of these proteins.
+Perspectives
+This is a very exciting and fruitful time for the ‘epigenetics field’ as illustrated by recent discoveries of new classes of enzymes, insight into the 
+biological role of chromatin-associated proteins, findings showing that 
+somatic mutations in genes coding for chromatin-associated proteins 
+are very frequent in cancer and the development of highly potent and 
+specific small molecule inhibitors to chromatin-associated proteins that 
+show great promise in preclinical trials. Until recently, it was uncertain 
+whether it would be technically feasible to generate specific and potent 
+inhibitors to the different classes of readers, writers and erasers of the 
+histone code. However, as we have discussed in this Review, this has 
+indeed been possible for very diverse enzymatic classes, such as the 
+HMTs, the two different subclasses of histone demethylases and for the 
+non-enzymatic bromodomain-containing proteins. These inhibitors 
+are undergoing or will shortly enter human phase I clinical trials for a 
+variety of oncology indications albeit initially in rare tumour types or 
+haematopoietic malignancies.
+A major challenge for a potential expansion of the inhibitors to other 
+tumour types will be to gain a better understanding of the mechanism of 
+action of the drugs, and therefore of the biology of the target protein. The 
+ongoing phase I clinical trials have all been designed based on genetic 
+evidence for a role of the targeted protein in the disease (DOT1L and 
+LSD1 in AML, EZH2 in DLBCL and IBET in NUT-midline carcinoma). 
+Such strong genetic evidence does not currently exist in other tumour 
+types; however, the effect of the specific inhibitors on large, ‘omically’ 
+well-characterized cell-line panels will hopefully help to identify specific genetic alterations that lead to drug sensitivity. Nonetheless, even 
+this approach is unlikely to be straightforward because most chromatinassociated proteins are present in several different multi-component 
+complexes that are associated with several thousand genes and loci 
+throughout the genome. The biology is therefore complex and, depending on the tissue and the underlying genetic landscape of the cell, the 
+chromatin-associated protein could act as an oncogene in one setting 
+but be a tumour suppressor in other circumstances. This is illustrated, 
+for instance, by EZH2, in which gain-of-function mutations promote 
+lymphoid transformation16,33,37,79 and loss-of-function mutations promote myelodysplastic syndrome and T-cell acute lymphoblastic leukaemia36,80–83. Similarly, somatic mutations of lysine 27 of H3.3 found 
+in paediatric glioblastoma have been shown to inhibit EZH2 activity84. 
+The dual roles of EZH2 and H3K27 methylation might also reflect the 
+biological role of EZH2 and the PRC2 complex. In contrast to signalling 
+pathways and transcription factors, chromatin-associated proteins and 
+epigenetic regulation do not seem to be decisive for lineage choice during differentiation. Instead these proteins are present in the genome to 
+ensure transcriptional patterns and cell identity. In other words, the chromatin-associated proteins often fine-tune transcriptional patterns, and 
+the genes regulated by the proteins can be both oncogenes and tumour 
+suppressor genes. The functions of the chromatin-associated proteins 
+do not mean that inhibitors of these proteins will not have a clinical 
+benefit, but highlight the difficulty in identifying biomarkers predictive 
+of tumour sensitivity. This is illustrated again by the EZH2 inhibitors, 
+whereby the levels of EZH2 in a tumour cell line do not predict whether 
+the cell line will respond to the inhibitor; however, a weak correlation 
+does exist between the ability of EZH2 inhibitors to decrease H3K27me3 
+levels in DLBCL and inhibition of cell growth37. 
+The generation of small molecule inhibitors of different classes of 
+chromatin-associated proteins has not only increased confidence in 
+the druggability of many epigenetic modulators, but has also provided 
+Figure 4 | Bromodomain proteins and their inhibitors. a, The 
+bromodomain can bind acetylated lysines, which are associated with 
+actively transcribed promoters. The bromodomain proteins (here 
+illustrated by BRD4 and associated proteins) have a variety of functions, 
+including mediating the initiation and elongation of transcription. BRD4 
+interacts with positive transcription elongation factor b (p-TEFb), which 
+phosphorylates the C-terminal domain of RNA polymerase II (Pol II) and 
+induces transcriptional elongation. The interaction of BRD4 with a number 
+of protein complexes involved in transcriptional regulation has also been 
+described. b, Chemical structures of prototypical bromodomain and 
+extra-terminal (BET) inhibitors. (+)-JQ1, IBET762 and IBET151 bind to all 
+members of the BET sub-family (Brd2, Brd3, Brd4 and BrdT) with similar 
+affinity and regulate the transcription of key oncogenes including the MYC 
+family and BCL2.
+BRD4
+p-TEFb
+Pol II
+HAT
+H3 H4
+ON
+ba
+Cl
+Cl
+OMe
+HN
+N
+N
+N
+N
+N
+H
+O
+O O
+N
+N
+NN
+N
+S
+N
+O
+O
+O
+IBET762(+)-JQ1 IBET151
+N
+4 8 6  |  N A T U R E  |  V O L  5 0 2  |  2 4  O C T O B E R  2 0 1 3
+REVIEWINSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+strong insights into the rational design of new compounds with higher 
+affinity and specificity. The hope is that this knowledge can be translated 
+into the generation of specific inhibitors of the many other chromatinassociated proteins involved in cancer. At the very least, such inhibitors 
+will be useful as research compounds to understand the biological function of new chromatin-associated proteins, but could eventually also 
+allow for the identification and therapeutic targeting of other pathways 
+that are important for the cancer phenotype. Increasingly, it is becoming evident that effective, long-term responses to anti-cancer therapies 
+require suppression of two or more oncogenic pathways and this is 
+likely to be the case for epigenetic therapies as well. However, modulation of the cancer epigenome with specific inhibitors may offer unique 
+opportunities to discover effective combination therapies based on the 
+potential to directly alter acquired transcriptional resistance mechanisms. Indeed, a recent report85 demonstrating reversal of platinum 
+resistance with HDAC inhibition in ovarian cancer highlights such 
+opportunities. Undoubtedly, other rational combinations remain to 
+be identified and the challenge will be to understand the fundamental 
+cellular alterations induced by epigenetic modulators and to develop 
+complementary agents that synergize most effectively. Along these lines, 
+the resurgence and current success of immunotherapeutic approaches 
+to cancer treatment also offers opportunities for epigenetically targeted 
+therapeutics. In principle, it may be possible to induce cell surface 
+expression of tumour-specific antigens, allowing for more effective and 
+sustained immune responses to tumours. Finally, the ability to silence 
+crucial oncogenes such as MYC and BCL2 with bromodomain inhibitors has been remarkable and unpredicted. Inactivation of the master 
+oncogenic proteins with small molecules has been the holy grail for anticancer approaches for many years. Yet even here, the lack of a detailed 
+mechanistic understanding of how the BET inhibitors work has led to 
+an empiric approach to determine how best to deploy these agents in the 
+clinic. Despite these limitations, it is important to remember that we are 
+nonetheless on the verge of advancing new molecules with novel biology to human studies with at least some molecular or pathway basis for 
+selecting patients who are most likely to benefit from these agents. Data 
+from these studies will ultimately determine whether these new epigenetic therapies will be a meaningful addition to the armamentarium of 
+physicians, but the signs are promising. ■
+Received 31 May; accepted 9 August 2013.
+1. Berger, S. L. The complex language of chromatin regulation during 
+transcription. Nature 447, 407–412 (2007). 
+2. Kouzarides, T. Chromatin modifications and their function. Cell 128, 693–705 
+(2007). 
+3. Baylin, S. B. & Jones, P. A. A decade of exploring the cancer epigenome — 
+biological and translational implications. Nature Rev. Cancer 11, 726–734 
+(2011). 
+ This review provides an excellent overview of epigenetics with an emphasis on 
+the linkage between genomic and epigenomic phenomena in cancer together 
+with opportunities for biomarker-driven development of therapeutics.
+4. Issa, J. P. & Kantarjian, H. M. Targeting DNA methylation. Clin. Cancer Res. 15, 
+3938–3946 (2009). 
+5. Yang, X., Lay, F., Han, H. & Jones, P. A. Targeting DNA methylation for epigenetic 
+therapy. Trends Pharmacol. Sci. 31, 536–546 (2010). 
+6. Khan, O. & La Thangue, N. B. HDAC inhibitors in cancer biology: emerging 
+mechanisms and clinical applications. Immunol. Cell Biol. 90, 85–94 (2012). 
+7. Wagner, J. M., Hackanson, B., Lubbert, M. & Jung, M. Histone deacetylase 
+(HDAC) inhibitors in recent clinical trials for cancer therapy. Clin. Epigenetics 1, 
+117–136 (2010). 
+8. You, J. S. & Jones, P. A. Cancer genetics and epigenetics: two sides of the same 
+coin? Cancer Cell 22, 9–20 (2012). 
+9. Huang, J. et al. p53 is regulated by the lysine demethylase LSD1. Nature 449, 
+105–108 (2007). 
+10. Wu, S. C. & Zhang, Y. Role of protein methylation and demethylation in nuclear 
+hormone signaling. Mol. Endocrinol. 23, 1323–1334 (2009). 
+11. Zhang, K. & Dent, S. Y. Histone modifying enzymes and cancer: going beyond 
+histones. J. Cell. Biochem. 96, 1137–1148 (2005). 
+12. Robinson, G. et al. Novel mutations target distinct subgroups of 
+medulloblastoma. Nature 488, 43–48 (2012). 
+13. Ryan, R. J. & Bernstein, B. E. Genetic events that shape the cancer epigenome. 
+Science 336, 1513–1514 (2012). 
+14. Shih, A. H., Abdel-Wahab, O., Patel, J. P. & Levine, R. L. The role of mutations in 
+epigenetic regulators in myeloid malignancies. Nature Rev. Cancer 12, 599–612 
+(2012). 
+15. McCabe, M. T. et al. Mutation of A677 in histone methyltransferase EZH2 in 
+human B-cell lymphoma promotes hypertrimethylation of histone H3 on lysine 
+27 (H3K27). Proc. Natl Acad. Sci. USA 109, 2989–2994 (2012). 
+16. Sneeringer, C. J. et al. Coordinated activities of wild-type plus mutant EZH2 
+drive tumor-associated hypertrimethylation of lysine 27 on histone H3 (H3K27) 
+in human B-cell lymphomas. Proc. Natl Acad. Sci. USA 107, 20980–20985 
+(2010). 
+17. Kuo, A. J. et al. NSD2 links dimethylation of histone H3 at lysine 36 to oncogenic 
+programming. Mol. Cell 44, 609–620 (2011). 
+18. Meyer, C. et al. New insights to the MLL recombinome of acute leukemias. 
+Leukemia 23, 1490–1499 (2009). 
+19. Okada, Y. et al. hDOT1L links histone methylation to leukemogenesis. Cell 121, 
+167–178 (2005). 
+20. Bernt, K. M. et al. MLL-rearranged leukemia is dependent on aberrant H3K79 
+methylation by DOT1L. Cancer Cell 20, 66–78 (2011). 
+21. Daigle, S. R. et al. Selective killing of mixed lineage leukemia cells by a potent 
+small-molecule DOT1L inhibitor. Cancer Cell 20, 53–65 (2011). 
+ References 20 and 21 present compelling evidence for the involvement of 
+DOT1L and H3K79 methylation in MLL-rearranged leukaemia and provide 
+rationale for therapeutic targeting of the enzyme.
+22. Anglin, J. L. et al. Synthesis and structure-activity relationship investigation of 
+adenosine-containing inhibitors of histone methyltransferase DOT1L. J. Med. 
+Chem. 55, 8066–8074 (2012). 
+23. Yu, W. et al. Bromo-deaza-SAH: a potent and selective DOT1L inhibitor. Bioorg. 
+Med. Chem. 21, 1787–1794 (2013). 
+24. Daigle, S. R. et al. Potent inhibition of DOT1L as treatment for MLL-fusion 
+leukemia. Blood http://dx.doi.org/10.1182/blood-2013-04-497644 (2013). 
+25. Morey, L. & Helin, K. Polycomb group protein-mediated repression of 
+transcription. Trends Biochem. Sci. 35, 323–332 (2010). 
+26. Varambally, S. et al. The polycomb group protein EZH2 is involved in 
+progression of prostate cancer. Nature 419, 624–629 (2002). 
+27. Dalgliesh, G. L. et al. Systematic sequencing of renal carcinoma reveals 
+inactivation of histone modifying genes. Nature 463, 360–363 (2010). 
+28. van Haaften, G. et al. Somatic mutations of the histone H3K27 demethylase 
+gene UTX in human cancer. Nature Genet. 41, 521–523 (2009). 
+29. Kleer, C. G. et al. EZH2 is a marker of aggressive breast cancer and promotes 
+neoplastic transformation of breast epithelial cells. Proc. Natl Acad. Sci. USA 
+100, 11606–11611 (2003). 
+30. Wagener, N. et al. Enhancer of zeste homolog 2 (EZH2) expression is an 
+independent prognostic factor in renal cell carcinoma. BMC Cancer 10, 524 
+(2010). 
+31. Takawa, M. et al. Validation of the histone methyltransferase EZH2 as a 
+therapeutic target for various types of human cancer and as a prognostic 
+marker. Cancer Sci. 102, 1298–1305 (2011). 
+32. Bracken, A. P. et al. EZH2 is downstream of the pRB–E2F pathway, essential for 
+proliferation and amplified in cancer. EMBO J. 22, 5323–5335 (2003). 
+33. Morin, R. D. et al. Somatic mutations altering EZH2 (Tyr641) in follicular and 
+diffuse large B-cell lymphomas of germinal-center origin. Nature Genet. 42, 
+181–185 (2010). 
+34. Pasqualucci, L. et al. Analysis of the coding genome of diffuse large B-cell 
+lymphoma. Nature Genet. 43, 830–837 (2011). 
+35. Ryan, R. J. et al. EZH2 codon 641 mutations are common in BCL2-rearranged 
+germinal center B cell lymphomas. PLoS ONE 6, e28585 (2011). 
+36. Nikoloski, G. et al. Somatic mutations of the histone methyltransferase gene 
+EZH2 in myelodysplastic syndromes. Nature Genet. 42, 665–667 (2010). 
+37. McCabe, M. T. et al. EZH2 inhibition as a therapeutic strategy for lymphoma 
+with EZH2-activating mutations. Nature 492, 108–112 (2012).
+ This is the first report of a potent and selective inhibitor of EZH2 with in vitro 
+and in vivo activity compared with EZH2 mutant lymphomas. 
+38. Knutson, S. K. et al. A selective inhibitor of EZH2 blocks H3K27 methylation and 
+kills mutant lymphoma cells. Nature Chem. Biol. 8, 890–896 (2012). 
+39. Qi, W. et al. Selective inhibition of Ezh2 by a small molecule inhibitor blocks 
+tumor cells proliferation. Proc. Natl Acad. Sci. USA 109, 21360–21365 (2012). 
+40. Valente, S. et al. Identification of PR-SET7 and EZH2 selective inhibitors inducing 
+cell death in human leukemia U937 cells. Biochimie 94, 2308–2313 (2012). 
+41. Epizyme Inc. Inhibitors of human EZH2, and methods to use thereof. 
+WO/2012/034132 (2012).
+42. Tan, J. et al. Pharmacologic disruption of Polycomb-repressive complex 
+2-mediated gene repression selectively induces apoptosis in cancer cells. 
+Genes Dev. 21, 1050–1063 (2007). 
+43. Miranda, T. B. et al. DZNep is a global histone methylation inhibitor that 
+reactivates developmental genes not silenced by DNA methylation. Mol. Cancer 
+Ther. 8, 1579–1588 (2009). 
+44. Knutson, S. K. et al. Durable tumor regression in genetically altered malignant 
+rhabdoid tumors by inhibition of methyltransferase EZH2. Proc. Natl Acad. Sci. 
+USA 110, 7922–7927 (2013). 
+ This article reports activity of EZH2 inhibitors in solid tumours suggesting 
+potential for clinical benefit beyond haematological malignancies.
+45. Kooistra, S. M. & Helin, K. Molecular mechanisms and potential functions of 
+histone demethylases. Nature Rev. Mol. Cell Biol. 13, 297–311 (2012). 
+46. Mosammaparast, N. & Shi, Y. Reversal of histone methylation: biochemical 
+and molecular mechanisms of histone demethylases. Annu. Rev. Biochem. 79, 
+155–179 (2010). 
+47. Yang, Z. Q. et al. Identification of a novel gene, GASC1, within an amplicon at 
+9p23–24 frequently detected in esophageal cancer cell lines. Cancer Res. 60, 
+4735–4739 (2000). 
+2 4  O C T O B E R  2 0 1 3  |  V O L  5 0 2  |  N A T U R E  |  4 8 7
+REVIEW INSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
+48. Liu, G. et al. Genomic amplification and oncogenic properties of the GASC1 
+histone demethylase gene in breast cancer. Oncogene 28, 4491–4500 (2009). 
+49. Ehrbrecht, A. et al. Comprehensive genomic analysis of desmoplastic 
+medulloblastomas: identification of novel amplified genes and separate evaluation 
+of the different histological components. J. Pathol. 208, 554–563 (2006). 
+50. Lu, P. J. et al. A novel gene (PLU-1) containing highly conserved putative DNA/
+chromatin binding motifs is specifically up-regulated in breast cancer. J. Biol. 
+Chem. 274, 15633–15645 (1999). 
+51. Hayami, S. et al. Overexpression of the JmjC histone demethylase KDM5B in 
+human carcinogenesis: involvement in the proliferation of cancer cells through 
+the E2F/RB pathway. Mol. Cancer 9, 59 (2010). 
+52. He, J., Nguyen, A. T. & Zhang, Y. KDM2b/JHDM1b, an H3K36me2-specific 
+demethylase, is required for initiation and maintenance of acute myeloid 
+leukemia. Blood 117, 3869–3880 (2011). 
+53. Jensen, L. R. et al. Mutations in the JARID1C gene, which is involved in 
+transcriptional regulation and chromatin remodeling, cause X-linked mental 
+retardation. Am. J. Hum. Genet. 76, 227–236 (2005). 
+54. Laumonnier, F. et al. Mutations in PHF8 are associated with X linked mental 
+retardation and cleft lip/cleft palate. J. Med. Genet. 42, 780–786 (2005). 
+55. Kruidenier, L. et al. A selective jumonji H3K27 demethylase inhibitor modulates 
+the proinflammatory macrophage response. Nature 488, 404–408 (2012). 
+ This article describes the discovery, structural biology and activity of potent 
+and selective Jumonji demethylase inhibitors.
+56. Lynch, J. T., Harris, W. J. & Somervaille, T. C. LSD1 inhibition: a therapeutic 
+strategy in cancer? Expert Opin. Ther. Targets 16, 1239–1249 (2012). 
+57. Hayami, S. et al. Overexpression of LSD1 contributes to human carcinogenesis 
+through chromatin regulation in various cancers. Int. J. Cancer 128, 574–586 
+(2011). 
+58. Kauffman, E. C. et al. Role of androgen receptor and associated lysinedemethylase coregulators, LSD1 and JMJD2A, in localized and advanced 
+human bladder cancer. Mol. Carcinog. 50, 931–944 (2011). 
+59. Kahl, P. et al. Androgen receptor coactivators lysine-specific histone 
+demethylase 1 and four and a half LIM domain protein 2 predict risk of prostate 
+cancer recurrence. Cancer Res. 66, 11341–11347 (2006). 
+60. Schulte, J. H. et al. Lysine-specific demethylase 1 is strongly expressed in 
+poorly differentiated neuroblastoma: implications for therapy. Cancer Res. 69, 
+2065–2071 (2009). 
+61. Harris, W. J. et al. The histone demethylase KDM1A sustains the oncogenic 
+potential of MLL-AF9 leukemia stem cells. Cancer Cell 21, 473–487 (2012). 
+62. Schenk, T. et al. Inhibition of the LSD1 (KDM1A) demethylase reactivates the 
+all-trans-retinoic acid differentiation pathway in acute myeloid leukemia. Nature 
+Med. 18, 605–611 (2012). 
+ Reference 61 and 62 highlight the role of LSD1 in AML and the potential for 
+inhibitors to synergize with all-trans-retinoic acid therapy.
+63. Oryzon Genomics. Phenylcyclopropylamine derivatives and their medical use . 
+WO/2010/084160 (2010).
+64. Ram, O. et al. Combinatorial patterning of chromatin regulators uncovered by 
+genome-wide location analysis in human cells. Cell 147, 1628–1639 (2011). 
+65. Whyte, W. A. et al. Enhancer decommissioning by LSD1 during embryonic stem 
+cell differentiation. Nature 482, 221–225 (2012). 
+66. Maes, T. et al. Preclinical characterization of a potent and selective inhibitor of 
+the histone demethylase KDM1A for MLL leukemia. J. Clin. Oncol. 31, suppl; 
+abstr. e13543 (2013).
+67. Lee, M. G., Wynder, C., Schmidt, D. M., McCafferty, D. G. & Shiekhattar, R. 
+Histone H3 lysine 4 demethylation is a target of nonselective antidepressive 
+medications. Chem. Biol. 13, 563–567 (2006). 
+68. Zuccato, C. et al. Huntingtin interacts with REST/NRSF to modulate the 
+transcription of NRSE-controlled neuronal genes. Nature Genet. 35, 76–83 (2003). 
+69. Liang, Y., Vogel, J. L., Narayanan, A., Peng, H. & Kristie, T. M. Inhibition of 
+the histone demethylase LSD1 blocks α-herpesvirus lytic replication and 
+reactivation from latency. Nature Med. 15, 1312–1317 (2009). 
+70. Filippakopoulos, P. et al. Histone recognition and large-scale structural analysis 
+of the human bromodomain family. Cell 149, 214–231 (2012). 
+71. Gyuris, A. et al. The chromatin-targeting protein Brd2 is required for neural tube 
+closure and embryogenesis. Biochim. Biophys. Acta 1789, 413–421 (2009). 
+72. Nicodeme, E. et al. Suppression of inflammation by a synthetic histone mimic. 
+Nature 468, 1119–1123 (2010). 
+73. Filippakopoulos, P. et al. Selective inhibition of BET bromodomains. Nature 468, 
+1067–1073 (2010). 
+74. Mitsubishi–Tanabe Pharma Corporation. Antitumor agent. WO/2009/084693 
+(2009).
+75. French, C. A. Demystified molecular pathology of NUT midline carcinomas. 
+J. Clin. Pathol. 63, 492–496 (2010). 
+76. Dawson, M. A. et al. Inhibition of BET recruitment to chromatin as an effective 
+treatment for MLL-fusion leukaemia. Nature 478, 529–533 (2011). 
+77. Delmore, J. E. et al. BET bromodomain inhibition as a therapeutic strategy to 
+target c-Myc. Cell 146, 904–917 (2011). 
+ Together with references 72 and 73, references 76 and 77 are outstanding 
+demonstrations of the feasibility of inhibiting bromodomain proteins in 
+inflammation and tumorigenesis.
+78. Puissant, A. et al. Targeting MYCN in neuroblastoma by BET bromodomain 
+inhibition. Cancer Discov. 3, 308–323 (2013). 
+79. Béguelin, W. et al. EZH2 is required for germinal center formation and somatic 
+EZH2 mutations promote lymphoid transformation. Cancer Cell 23, 677–692 
+(2013). 
+80. Ernst, T. et al. Inactivating mutations of the histone methyltransferase gene 
+EZH2 in myeloid disorders. Nature Genet. 42, 722–726 (2010). 
+81. Ntziachristos, P. et al. Genetic inactivation of the polycomb repressive complex 
+2 in T cell acute lymphoblastic leukemia. Nature Med. 18, 298–301 (2012). 
+82. Simon, C. et al. A key role for EZH2 and associated genes in mouse and human 
+adult T-cell acute leukemia. Genes Dev. 26, 651–656 (2012). 
+83. Zhang, J. et al. The genetic basis of early T-cell precursor acute lymphoblastic 
+leukaemia. Nature 481, 157–163 (2012). 
+84. Lewis, P. W. et al. Inhibition of PRC2 activity by a gain-of-function H3 mutation 
+found in pediatric glioblastoma. Science 340, 857–861 (2013). 
+85. Stronach, E. A. et al. HDAC4-regulated STAT1 activation mediates platinum 
+resistance in ovarian cancer. Cancer Res. 71, 4412–4422 (2011). 
+86. Yu, W. et al. Catalytic site remodelling of the DOT1L methyltransferase by 
+selective inhibitors. Nature Commun. 3, 1288 (2012). 
+87. Amatangelo, M. D. et al. Three-dimensional culture sensitizes epithelial ovarian 
+cancer cells to EZH2 methyltransferase inhibition. Cell Cycle 12, 2113–2119 
+(2013). 
+88. Structural Genomics Consortium. Chemical Probes. http://www.thesgc.org/
+scientists/chemical_probes (SGC, 2013).
+89. Konze, K. D. et al. An orally bioavailable chemical probe of the lysine 
+methyltransferases EZH2 and EZH1. ACS Chem. Biol. 8, 1324–1334 (2013). 
+90. Kubicek, S. et al. Reversal of H3K9me2 by a small-molecule inhibitor for the 
+G9a histone methyltransferase. Mol. Cell 25, 473–481 (2007). 
+91. Liu, F. et al. Protein lysine methyltransferase G9a inhibitors: design, synthesis, 
+and structure activity relationships of 2,4-diamino-7-aminoalkoxy-quinazolines. 
+J. Med. Chem. 53, 5844–5857 (2010). 
+92. Vedadi, M. et al. A chemical probe selectively inhibits G9a and GLP 
+methyltransferase activity in cells. Nature Chem. Biol. 7, 566–574 (2011). 
+93. Yuan, Y. et al. A small-molecule probe of the histone methyltransferase G9a 
+induces cellular senescence in pancreatic adenocarcinoma. ACS Chem. Biol. 7, 
+1152–1157 (2012). 
+94. Liu, F. et al. Exploiting an allosteric binding site of PRMT3 yields potent and 
+selective inhibitors. J. Med. Chem. 56, 2110–2124 (2013). 
+95. Wan, H. et al. Benzo[d]imidazole inhibitors of coactivator associated arginine 
+methyltransferase 1 (CARM1) — hit to lead studies. Bioorg. Med. Chem. Lett. 19, 
+5063–5066 (2009). 
+96. Sack, J. S. et al. Structural basis for CARM1 inhibition by indole and pyrazole 
+inhibitors. Biochem. J. 436, 331–339 (2011). 
+97. Allan, M. et al. N-Benzyl-1-heteroaryl-3-(trifluoromethyl)-1H-pyrazole5-carboxamides as inhibitors of co-activator associated arginine 
+methyltransferase 1 (CARM1). Bioorg. Med. Chem. Lett. 19, 1218–1223 (2009). 
+98. Seal, J. et al. Identification of a novel series of BET family bromodomain 
+inhibitors: binding mode and profile of I-BET151 (GSK1210151A). Bioorg. Med. 
+Chem. Lett. 22, 2968–2972 (2012). 
+99. Picaud, S. et al. PFI-1, a highly selective protein interaction inhibitor, targeting 
+BET bromodomains. Cancer Res. 73, 3336–3346 (2013). 
+100. Herold, J. M. et al. Small-molecule ligands of methyl-lysine binding proteins. J. 
+Med. Chem. 54, 2504–2511 (2011). 
+101. James, L. I. et al. Discovery of a chemical probe for the L3MBTL3 methyllysine 
+reader domain. Nature Chem. Biol. 9, 184–191 (2013). 
+102. Metzger, E. et al. LSD1 demethylates repressive histone marks to promote 
+androgen-receptor-dependent transcription. Nature 437, 436–439 (2005). 
+103. Wissmann, M. et al. Cooperative demethylation by JMJD2C and LSD1 promotes 
+androgen receptor-dependent gene expression. Nature Cell Biol. 9, 347–353 
+(2007). 
+Acknowledgement Work in the Helin laboratory is supported by the Danish 
+National Research Foundation, the Danish Cancer Society, the Novo Nordisk 
+Foundation, the Lundbeck Foundation, the European Union, The European 
+Research Council and the Excellence Programme of the University of Copenhagen. 
+Author Information Reprints and permissions information is available 
+at www.nature.com/reprints. The authors declare competing financial 
+interests: details accompany the full-text HTML version of this paper at 
+go.nature.com/4tc9uy. Readers are welcome to comment on the online version of 
+this article at go.nature.com/4tc9uy. Correspondence should be addressed to K.H. 
+(kristian.helin@bric.ku.dk) or D.D. (ddhanak8@ITS.JNJ.com). 
+4 8 8  |  N A T U R E  |  V O L  5 0 2  |  2 4  O C T O B E R  2 0 1 3
+REVIEWINSIGHT
+© 2013 Macmillan Publishers Limited. All rights reserved
