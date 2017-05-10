@@ -26,7 +26,7 @@ class chromatin:
 		else:
 			self.pmid = name[1]
 		self.xml = os.path.join(self.xmlPath, name[0]+".txt.xml")
-		self.saveName = os.path.join(self.savePath, self.pmid+".csv")
+		#self.saveName = os.path.join(self.savePath, self.pmid+".csv")
 		self.txtFile = os.path.join(self.txtPath, name[0]+".txt")
 		f = open(self.txtFile)
 		self.txtContent = f.read().lower()
@@ -138,7 +138,7 @@ class chromatin:
                                                 section = item[0]
                                         else:
                                                 break
-                                self.save(section, entities, toShow, sentenceID)
+                                self.save(section, entities, toShow, sentenceID, mode)
 
                             
         
@@ -157,10 +157,18 @@ class chromatin:
         
         
         
-	def save(self, section, entityList, sentence, sentenceID):
+	def save(self, section, entityList, sentence, sentenceID, saveMode):
 		strSentence = " ".join(sentence).encode("utf-8", "ignore")
 		strSentence = strSentence.replace(" .", ".")
-		with open(self.saveName, 'a+') as csvFile:
+		if saveMode == 0:
+                    savePath = self.savePath + "/histone"
+                else:
+                    saveMode = saveMode.split('.')[0]
+                    savePath = self.savePath + "/" + saveMode
+                if not os.path.exists(savePath):
+                    os.makedirs(savePath)
+                saveName = os.path.join(savePath, self.pmid+".csv")
+		with open(saveName, 'a+') as csvFile:
 			resultWriter = csv.writer(csvFile, delimiter = '\t')
 			for entity in entityList:
 				resultWriter.writerow([self.pmid,section, sentenceID,entity, strSentence])
