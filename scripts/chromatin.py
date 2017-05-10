@@ -10,30 +10,39 @@ import re
 
 class chromatin:
 	
-	def __init__(self, name):
+	def __init__(self, name, mode):
 		self.mapPath = "./maps"
 		self.savePath = "../csv"
 		self.txtPath = "../txt"
 		self.xmlPath = "../xml"
-		self.xMap = os.path.join(self.mapPath, "x_map.dat")
-		self.xHat = os.path.join(self.mapPath, "x_hat.dat")
-		self.yMap = os.path.join(self.mapPath, "y_map.dat")
-		self.yHat = os.path.join(self.mapPath, "y_hat.dat")
-		self.zMap = os.path.join(self.mapPath, "z_map.dat")
-		self.zHat = os.path.join(self.mapPath, "z_hat.dat")
+		self.mode = mode
+		if self.mode == 0:
+                    self.xMap = os.path.join(self.mapPath, "x_map.dat")
+                    self.xHat = os.path.join(self.mapPath, "x_hat.dat")
+                    self.yMap = os.path.join(self.mapPath, "y_map.dat")
+                    self.yHat = os.path.join(self.mapPath, "y_hat.dat")
+                    self.zMap = os.path.join(self.mapPath, "z_map.dat")
+                    self.zHat = os.path.join(self.mapPath, "z_hat.dat")
+                    self.histone = self.buildDict(self.xHat, self.xMap)
+                    self.position = self.buildDict(self.yHat, self.yMap)
+                    self.modif = self.buildDict(self.zHat, self.zMap)
+                else:
+                    self.myHat = os.path.join(self.mapPath, mode+"_hat.dat")
+                    self.myMap = os.path.join(self.mapPath, mode+"_map.dat")
+                    self.myDict = self.buildDict(self.myHat, self.myMap)
+                    self.eventHat = os.path.join(self.mapPath, "event_hat.dat")
+                    self.eventMap = os.path.join(self.mapPath, "event_map.dat")
+                    self.event = self.buildDict(self.eventHat, self.eventMap)
 		if len(name) == 1:
 			self.pmid = name[0]
 		else:
 			self.pmid = name[1]
 		self.xml = os.path.join(self.xmlPath, name[0]+".txt.xml")
-		#self.saveName = os.path.join(self.savePath, self.pmid+".csv")
 		self.txtFile = os.path.join(self.txtPath, name[0]+".txt")
 		f = open(self.txtFile)
 		self.txtContent = f.read().lower()
 		self.sectionPos = self.sectionList()
-		self.histone = self.buildDict(self.xHat, self.xMap)
-		self.position = self.buildDict(self.yHat, self.yMap)
-		self.modif = self.buildDict(self.zHat, self.zMap)
+		
 		
 	def sectionList(self):
 		sectionDict = {'ABSTRACT':['abstract', 'summary'],
@@ -96,6 +105,7 @@ class chromatin:
 			f2 = open(mapFile, 'r')
 			for line in f2:
 				line = line.replace("\r\n","")
+				line = line.replace("\n", "")
 				if line == "":
 					continue
 				values = line.split('\t')
@@ -107,7 +117,7 @@ class chromatin:
 		return grammar
 
 	
-	def sentenceParser(self, mode):
+	def sentenceParser(self):
 		tree = ET.parse(self.xml)
 		root = tree.getroot()
 		for sentence in root[0][0]:
@@ -127,10 +137,10 @@ class chromatin:
 				toParse.append(lemma)
 				toShow.append(word)
 			toParse = " ".join(toParse).encode("utf-8", "ignore")
-			if mode == 0:
+			if self.mode == 0:
                             entities = self.chromatinGrammar(toParse)
                         else:
-                            entities = self.singleDictParser(mode, toParse)
+                            entities = self.singleDictParser(self.mode, toParse)
                         if len(entities)>0:
                                 section = ""
                                 for item in self.sectionPos:
@@ -138,21 +148,25 @@ class chromatin:
                                                 section = item[0]
                                         else:
                                                 break
-                                self.save(section, entities, toShow, sentenceID, mode)
+                                self.save(section, entities, toShow, sentenceID, self.mode)
 
                             
         
         
         def singleDictParser(self, mode, toParse):
-            myMap = os.path.join(self.mapPath, mode)
-            myDict = self.buildDict(myMap)
-            myGrammar = (WordStart() + myDict + WordEnd())
+            myGrammar = (WordStart() + self.myDict + WordEnd())
+            eventGrammar = (WordStart() + self.event + WordEnd())
             ParserElement.enablePackrat()
             results = myGrammar.searchString(toParse)
             entityList = []
             if len(results) > 0:
+                eventResult = eventGrammar.searchString(toParse)
+                event = ""
+                if len(eventResult)>0:
+                    event = "/".join(it[0] for it in eventResult)
+                    event = "|" + event
                 for item in results:
-                    entityList.append(item[0])
+                    entityList.append(item[0]+event)
             return entityList
         
         
@@ -163,7 +177,6 @@ class chromatin:
 		if saveMode == 0:
                     savePath = self.savePath + "/histone"
                 else:
-                    saveMode = saveMode.split('.')[0]
                     savePath = self.savePath + "/" + saveMode
                 if not os.path.exists(savePath):
                     os.makedirs(savePath)

@@ -4,6 +4,6 @@ import sys
 fileName = sys.argv[1]
 name = [fileName]
 # For parsing with single dictionary:
-#chromatin(name).sentenceParser("A_protein.dat")
+chromatin(name,"B_Drug").sentenceParser()
 # For parsing for more complicated grammar:
-chromatin(name).sentenceParser(0)
+#chromatin(name, 0).sentenceParser()
