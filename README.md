@@ -1,5 +1,13 @@
 # textParser
 textParser is a tool to extract useful information from academic papers.
+# Prerequisites
+textParser needs the library pyparsing:
+
+http://pyparsing.wikispaces.com/
+
+Please download the package and put it under the main folder.
+
+Of course you can also install pyparsing, then please modify "./scripts/chromatin.py"
 # How to use
 This parser has two parsing modes:
 
