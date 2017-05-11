@@ -8,6 +8,13 @@ http://pyparsing.wikispaces.com/
 Please download the package and put it under the main folder.
 
 Of course you can also install pyparsing, then please modify "./scripts/chromatin.py"
+# Before parsing
+Most of the cases the academic papers are in the format of pdf.
+
+Please use pdfbox:
+https://pdfbox.apache.org/download.cgi
+to transform the pdf file into txt file and put the file in the folder "./txt"
+
 # How to use
 This parser has two parsing modes:
 
