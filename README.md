@@ -22,10 +22,21 @@ mode 0: histone grammar as X + Y + Z
 
 mode "mapName": parsing protein information
 
+# How to build the map
+You need to build your own map to parse the information you want.
+The maps are in .dat format. Please put your maps in ./scripts/maps
+
 # To call the function
 see the file "call.py"
 
 Input should be the pmid of the article you want to parse.
 
 Remember to put the txt file as well as the xml file of the article in the folder ./txt and ./xml
+
+# Where you can find your output
+The outputs are in the folder ./csv.
+If you use mode 0 for parsing, the outputs are in ./csv/histone
+If you use mode "mapName", the outputs are in ./csv/yourMapName
+
+The output format is .csv
 
