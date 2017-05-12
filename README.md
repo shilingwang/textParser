@@ -12,7 +12,7 @@ Of course you can also install pyparsing, then please modify "./scripts/chromati
 Most of the cases the academic papers are in the format of pdf.
 
 Please use pdfbox:
-https://pdfbox.apache.org/download.cgi
+https://pdfbox.apache.org/download.cgi.
 to transform the pdf file into txt file and put the file in the folder "./txt"
 
 # How to use
@@ -20,7 +20,7 @@ This parser has two parsing modes:
 
 mode 0: histone grammar as X + Y + Z
 
-mode "mapName": parsing protein information
+mode "mapName": parsing protein/drugs/disease informatio.n
 
 # How to build the map
 You need to build your own map to parse the information you want.
@@ -35,8 +35,8 @@ Remember to put the txt file as well as the xml file of the article in the folde
 
 # Where you can find your output
 The outputs are in the folder ./csv.
-If you use mode 0 for parsing, the outputs are in ./csv/histone
-If you use mode "mapName", the outputs are in ./csv/yourMapName
+If you use mode 0 for parsing, the outputs are in ./csv/histone.
+If you use mode "mapName", the outputs are in ./csv/yourMapName.
 
 The output format is .csv
 
