@@ -6,10 +6,13 @@ import operator
 
 master = sys.argv[1]
 slave = sys.argv[2]
+articleType = sys.argv[3]
 
 # this summary is based on sentence level, which means relation is based on article
 
-
+def reverse_numeric(x, y):
+        return y - x
+    
 def buildInvertedTable(_file):
     lookup = collections.defaultdict(int)
     direct = []
@@ -42,14 +45,28 @@ def checkSimilarity(master, slave):
             entity = row[3].split("|")[0]
             if entity in masterLookup:
                 sentenceIdMaster[sentenceId].add(masterLookup[entity])
-    for sentenceId, entitiesIds in sentenceIdMaster.items():
-        for entityId in entitiesIds:
-            masterCountList[entityId] += 1
-            if sentenceId in sentenceIdSlave:
-                slavesIds = sentenceIdSlave[sentenceId]
-                for slaveId in slavesIds:
-                    resultTable[entityId][slaveId] += 1
-                
+    if level == 'sentence':
+        for sentenceId, entitiesIds in sentenceIdMaster.items():
+            for entityId in entitiesIds:
+                masterCountList[entityId] += 1
+                if sentenceId in sentenceIdSlave:
+                    slavesIds = sentenceIdSlave[sentenceId]
+                    for slaveId in slavesIds:
+                        resultTable[entityId][slaveId] += 1
+    if level == 'article':
+        tmp_masterCountList = [0] * len(masterList)
+        tmp_resultTable = collections.defaultdict(lambda : collections.defaultdict(int))
+        for sentenceId, entitiesIds in sentenceIdMaster.items():
+            for entityId in entitiesIds:
+                tmp_masterCountList[entityId] = 1
+                if sentenceId in sentenceIdSlave:
+                    slavesIds = sentenceIdSlave[sentenceId]
+                    for slaveId in slavesIds:
+                        tmp_resultTable[entityId][slaveId] = 1
+        for i in range(len(masterList)):
+            masterCountList[i] += tmp_masterCountList[i]
+            for slaveId in tmp_resultTable[i]:
+                resultTable[i][slaveId] += tmp_resultTable[i][slaveId]
 
 def writeDictToFile(filename):
     with open(filename, 'a+') as savefile:
@@ -58,7 +75,8 @@ def writeDictToFile(filename):
             row = []
             row.append(entity + '|' + str(masterCountList[i]))
             result = resultTable[i]
-            row.append(';'.join('{}:{}'.format(slaveList[k], v) for k, v in result.items()))
+            sorted_result = sorted(result.items(), key=operator.itemgetter(1), cmp = reverse_numeric)
+            row.append(';'.join('{}:{}'.format(slaveList[k], v) for k, v in sorted_result))
             if row[1] != '':
                 fileWriter.writerow(row)
     
@@ -71,16 +89,22 @@ if __name__ == '__main__':
     global slaveLookup
     global resultTable
     global masterCountList
+    global level
+    level = 'sentence'
     masterList, masterLookup = buildInvertedTable(masterFolder + '.csv')
     slaveList, slaveLookup = buildInvertedTable(slaveFolder + '.csv')
+    articleList, articleLookup = buildInvertedTable(articleType + '.csv')
     pmidList = os.listdir(masterFolder)
     resultTable = collections.defaultdict(lambda : collections.defaultdict(int))
     masterCountList = [0] * len(masterList)
     for pmid in pmidList:
-        master = os.path.join(masterFolder, pmid)
-        slave = os.path.join(slaveFolder, pmid)
-        checkSimilarity(master, slave)
-    writeDictToFile('./result.csv')
+        if pmid[:-4] not in articleLookup:
+            continue
+        _master = os.path.join(masterFolder, pmid)
+        _slave = os.path.join(slaveFolder, pmid)
+        checkSimilarity(_master, _slave)
+    filename = './'+master+'-'+slave+ '-'+ articleType +'.csv'
+    writeDictToFile(filename)
 
     
     
