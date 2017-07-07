@@ -7,8 +7,8 @@ import operator
 master = sys.argv[1]
 slave = sys.argv[2]
 articleType = sys.argv[3]
+level = sys.argv[4]
 
-# this summary is based on sentence level, which means relation is based on article
 
 def reverse_numeric(x, y):
         return y - x
@@ -81,16 +81,14 @@ def writeDictToFile(filename):
                 fileWriter.writerow(row)
     
 if __name__ == '__main__':
-    masterFolder = './' + master
-    slaveFolder = './' + slave
+    masterFolder = '../csv/' + master
+    slaveFolder = '../csv/' + slave
     global masterList
     global masterLookup
     global slaveList
     global slaveLookup
     global resultTable
     global masterCountList
-    global level
-    level = 'sentence'
     masterList, masterLookup = buildInvertedTable(masterFolder + '.csv')
     slaveList, slaveLookup = buildInvertedTable(slaveFolder + '.csv')
     articleList, articleLookup = buildInvertedTable(articleType + '.csv')
