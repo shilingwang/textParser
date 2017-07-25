@@ -214,61 +214,48 @@ class chromatin:
 	
 	
 	def getEntity(self, results):
-		entityList, tmpLen2, tmpLen1, tmpY, tmpZ = [], [], [], [], []
-		flag = False
-		for result in results:
-			if result.multi:
-				entityList.append(result)
-				flag = True
-				continue
-			if result.xyz:
-				flag = True
-				if len(result)==3:
-					entityList.append(result)
-				elif len(result)==2:
-					tmpLen2.append(result)
-				elif len(result)==1:
-					tmpLen1.append(result)
-				continue
-			if result.y:
-				tmpY.append(result)
-				continue
-			if result.z:
-				tmpZ.append(result)
-		if flag == False:
-			return []
-		newTmpLen1 = []
-		if len(tmpY) != 0 and len(tmpLen1) != 0:
-			for itemLen1 in tmpLen1:
-				for itemY in tmpY:
-					newTmpLen1.append(itemLen1 + itemY)
-		if len(tmpZ) != 0 and len(tmpLen2) != 0:
-			for itemLen2 in tmpLen2:
-				newTmpLen2 = []
-				for itemZ in tmpZ:
-					if itemZ[0] not in itemLen2:
-						newTmpLen2.append(itemLen2 + itemZ)
-				for item in newTmpLen2:
-					if item not in entityList:
-						entityList.append(item)
-		if len(tmpZ) != 0 and len(newTmpLen1) != 0:
-			newTmpLen3 = []
-			for itemZ in tmpZ:
-				for itemLen1 in newTmpLen1:
-					newTmpLen3.append(itemLen1 + itemZ)
-				for item in newTmpLen3:
-					if item not in entityList:
-						entityList.append(item)
-		if len(tmpZ) == 0 and len(tmpY) == 0:
-			entityList += tmpLen2
-			entityList += tmpLen1
-		if len(tmpY) != 0 and len(tmpZ) == 0:
-			if len(newTmpLen1) == 0:
-				entityList += tmpLen2
-			else:
-				entityList += newTmpLen1
-				entityList += tmpLen2
-			
-		return entityList
+            entityList = set()
+            x_and_y = set()
+            x_and_z = set()
+            x_alone = set()
+            y_alone = set()
+            z_alone = set()
+            for result in results:
+                if result.multi:
+                    entityList.add(''.join(result))
+                    continue
+                if result.xyz:
+                    if len(result) >= 3:
+                        entityList.add(''.join(result))
+                    elif len(result) == 2:
+                        if result.yy:
+                            x_and_y.add(''.join(result))
+                        elif result.zz:
+                            x_and_z.add('|'.join(result))
+                    elif len(result) == 1:
+                        x_alone.add(result[0])
+                    continue
+                if result.y:
+                    y_alone.add(result[0])
+                    continue
+                if result.z:
+                    z_alone.add(result[0])
+            for x in x_alone:
+                for y in y_alone:
+                    x_and_y.add(x+y)
+                for z in z_alone:
+                    x_and_z.add(x+'|'+z)
+            for xy in x_and_y:
+                for z in z_alone:
+                    entityList.add(xy+z)
+                if not z_alone:
+                    entityList.add(xy)
+            for xz in x_and_z:
+                x = xz.split('|')[0]
+                z = xz.split('|')[1]
+                for y in y_alone:
+                    entityList.add(x+y+z)
+                if not y_alone:
+                    entityList.add(x+z)
+            return entityList
 
-			
